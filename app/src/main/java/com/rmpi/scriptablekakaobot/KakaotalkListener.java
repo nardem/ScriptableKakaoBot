@@ -83,7 +83,7 @@ public class KakaotalkListener extends NotificationListenerService {
             _msg = Html.fromHtml(html.split("</b>")[1].split("</p>")[0].substring(1)).toString();
         }
 
-        responder.call(parseContext, execScope, execScope, new Object[] { room, _msg, sender});
+        responder.call(parseContext, execScope, execScope, new Object[] { room, _msg, sender });
     }
 
     public static class Kakaotalk extends ScriptableObject {
